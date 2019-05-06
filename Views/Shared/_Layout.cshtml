@@ -1,0 +1,32 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Hey there!</title>
+	<meta name="description" content="Hello from Atomist!">
+	<meta name="author" content="Atomist">
+
+	<link rel="shortcut icon" href="http://atomist.com/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700,800" rel="stylesheet">
+
+    <environment include="Development">
+        <link rel="stylesheet" href="css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    </environment>
+
+</head>
+<body>
+    
+    <div class="top-color-bar"></div>
+    
+    @RenderBody()
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
